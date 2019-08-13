@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+</head>
+<body onload="findTheConstellationName(stName)">
+    <script>
+        let starName = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe ","Regulus"]
+        let constellationName =["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
+
+        function findTheConstellationName(starname) {
+            for (let i = 0; i < starName.length ; i++) {
+                if (starname === starName[i]) {
+                    alert(constellationName[i]);
+                    break;
+                } else {
+                    alert("Please try again")
+                }
+            }
+            
+        }
+        let stName = prompt("Enter the star name");
+    </script>
+</body>
+</html>
